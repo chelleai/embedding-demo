@@ -1,14 +1,24 @@
 ---
 title: Document Retrieval with Embeddings
-author: Joshua Cook
+author: Joshua Cook, Chelle AI
 theme: "Berkeley"
 ---
 
 # Introduction
 
+![](img/xhibit.jpeg)
+
+---
+
 ## Importance of Document Retrieval
 
 - Powerful, cheap strategy for building new product features
+- Here a **document** is any textual record
+   - e.g. a Hotel in a travel context
+   - e.g. a Job in a job search context
+   - e.g. an Influencer 
+
+Dirt-cheap recommender system. Use Document Retrieval to generate a list of candidates. Then use distance and metadata to rank them and then use. 
 
 ---
 
@@ -37,8 +47,23 @@ https://engineering.linkedin.com/blog/2023/how-linkedin-is-using-embeddings-to-u
 
 ## Retrieval-Augmented Generation
 
+![](img/85i167.jpg)
+
+---
+
 ![](img/rag.png)
 https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview
+
+---
+
+## Retrieval-Augmented Generation
+
+- for open-domain question answering (QA) e.g. "Chat" with GPT
+- the benefits of:
+  - traditional information retrieval (IR)
+   - with the power of large language models (LLMs)
+- RAG uses a pre-trained LLM (GPT4) to generate answers to a given question
+- but first uses an IR system to retrieve relevant documents for context 
 
 ---
 
@@ -46,10 +71,12 @@ https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-ov
 
 ## What are Embeddings?
 
-- Converting words to numerical space
-- Example: Man <-> Woman is similar to King <-> Queen
+- Converting words to points
+- Captures meaning in the math, especially distance and direction
 
----
+# Classic Example
+
+## Example: Man <-> Woman is similar to King <-> Queen
 
 ![](img/manwoman.png)
 
@@ -59,6 +86,14 @@ https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-ov
 
 - Understands semantic context
 - Example: Differentiates "Apple" the company from "apple" the fruit
+
+# Also
+
+![](img/cheapest.png)
+
+# Pricing
+
+![](img/pricing.png)
 
 # Demo 
 
